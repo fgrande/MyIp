@@ -9,6 +9,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 var routes = require("./routes");
 var data = require("./routes/data.js")
+var test = require("./routes/test.js")
 
 var port = process.env["app_port"] || 9646; // 9634
 
@@ -29,6 +30,7 @@ app.get('/all/:format?', data.all);
 
 
 
+app.get('/test', test.test);
 app.get('/temp', data.temp);
 
 
