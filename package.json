@@ -1,0 +1,27 @@
+{
+  "name": "ifcfg",
+  "version": "0.0.1-b",
+  "description": "Public IP detection",
+  "author": "",
+  "maintainers": [
+    "Fabio Grande @FabioGrande"
+  ],
+  "keywords": [
+    "ifcfg"
+  ],
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "3.x",
+    "hbs": "*",
+    "useragent": "~2.0.7",
+    "path" : "*"
+  },
+  "devDependencies": {
+    "vows": "0.7.x",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}

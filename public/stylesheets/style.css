@@ -1,0 +1,79 @@
+body {
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+.title {
+  padding: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.tblMain {
+  width: 100%;
+  padding: 5px;
+  text-align: left;
+}
+.lblMain {
+  padding: 5px;
+  font-weight: bold;
+  text-align: left;
+  border: 1px solid;
+}
+.txtMain {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid;
+}
+
+
+.tblCurl {
+  width: 100%;
+  padding: 5px;
+  text-align: left;
+  border: 1px solid;
+}
+.lblCurl {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid;
+}
+.txtCurl {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid;
+}
+
+.ipAddress {
+  padding: 5px;
+  text-align: center;
+  
+}
+
+.pageLink {
+  width: 5%;
+  text-align: center;
+  padding: 5px;
+}
+
+.disclaimer {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.adsense {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.support {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
