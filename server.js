@@ -2,7 +2,7 @@ var express = require('express');
 var hbs = require('hbs');
 var path = require("path");
 
-global.utils = require("./common/utils.js");
+//global.utils = require("./common/utils.js");
 global.website = "myip.cloudno.de";
 
 hbs.registerPartials(__dirname + '/views/partials');

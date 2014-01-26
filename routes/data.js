@@ -1,18 +1,22 @@
 exports.ip = function(request, response) {
+  var utils = require("../common/utils.js");
   response.send(utils.getAllData(request).remoteIp);
 }
 
 exports.port = function(request, response) {
+  var utils = require("../common/utils.js");
   response.send(utils.getAllData(request).remotePort);
 }
 
 exports.host = function(request, response) {
+  var utils = require("../common/utils.js");
   response.send(utils.getAllData(request).host);
 }
 
 
 
 exports.all = function(request, response) {
+  var utils = require("../common/utils.js");
   var fmt = request.params.format || "";
   response.send(utils.getAllDataFormatted(request, fmt, false));
 }
@@ -22,6 +26,7 @@ exports.all = function(request, response) {
 
 exports.temp = function(request, response) {
   
+  var utils = require("../common/utils.js");
 	response.send(utils.getAllData(request));
 	/*
   var useragent = require("useragent");
