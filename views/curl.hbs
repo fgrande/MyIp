@@ -1,15 +1,53 @@
+<div class="link">
+ <a href="/">Back Home</a>
+</div>
 <table class="tblCurl">
   <tr>
-    <td class="lblCurl">curl {{website}}</td>
+    <td class="lblCurl">curl {{data.host}}</td>
     <td class="txtCurl">{{data.remoteIp}}</td>
-    <td class="pageLink"><a href="/">Back to Main</a></td>
   </tr>
   <tr>
-    <td class="lblCurl">curl {{website}}/ip</td>
-    <td class="txtCurl" colspan="2">{{data.remoteIp}}</td>
+    <td class="lblCurl">curl {{data.host}}/ip</td>
+    <td class="txtCurl">{{data.remoteIp}}</td>
   </tr>
   <tr>
-    <td class="lblCurl">curl {{website}}/host</td>
-    <td class="txtCurl" colspan="2">{{data.host}}</td>
+    <td class="lblCurl">curl {{data.host}}/ua</td>
+    <td class="txtCurl">{{data.uaStr}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/ua/json</td>
+    <td class="txtCurl" style="white-space:pre">{{json data.ua}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/port</td>
+    <td class="txtCurl">{{data.remotePort}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/lang</td>
+    <td class="txtCurl">{{data.language}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/conn</td>
+    <td class="txtCurl">{{data.connection}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/enc</td>
+    <td class="txtCurl">{{data.encoding}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/mime</td>
+    <td class="txtCurl">{{data.accept}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/all</td>
+    <td class="txtCurl" style="white-space:pre">{{dataplain}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/all/xml</td>
+    <td class="txtCurl" style="white-space:pre">{{dataxml}}</td>
+  </tr>
+  <tr>
+    <td class="lblCurl">curl {{data.host}}/all/json</td>
+    <td class="txtCurl" style="white-space:pre">{{json data}}</td>
   </tr>
 </table>

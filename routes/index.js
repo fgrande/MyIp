@@ -5,9 +5,9 @@ exports.index = function(request, response) {
     response.send(utils.getAllData(request).remoteIp);
   }
   else {
-    response.render('index', { title: "Titolo !", 
-                               test : "Prova", 
-                               website : global.website,
+    response.render('index', { title : "What is MyIp ?", 
+                               header : "My public IP Address is...", 
+                               website : "myip.cloudno.de",
                                data : utils.getAllData(request)});
   }
 }
@@ -17,10 +17,13 @@ exports.index = function(request, response) {
 exports.curl = function(request, response) {
 
   var utils = require("../common/utils.js");
-  response.render('curl', { title: "Titolo !", 
-                            test : "Prova", 
-                            website : global.website,
-                            data : utils.getAllData(request)});
+  var jdata = utils.getAllData(request);
+  response.render('curl', { title : "What is MyIp ?", 
+                            header : "Something about cURL...",
+                            website : "myip.cloudno.de",
+                            dataxml : utils.getAllDataFormatted(jdata, "xml"),
+                            dataplain : utils.getAllDataFormatted(jdata, ""),
+                            data : jdata });
 
 }
 

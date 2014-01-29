@@ -4,15 +4,37 @@ body {
   padding-left: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
+@media print  { 
+.noprint  { display: none; } 
+}
+
 a {
   color: #00b7ff;
 }
+
 .title {
   padding: 20px;
   font-weight: bold;
+  font-size: 1.5em;
   text-align: center;
   width: 100%;
 }
+
+.link {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.ipAddress {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid;
+  font-size: 1.9em;  
+  text-align: center;
+}
+
 
 .tblMain {
   width: 100%;
@@ -23,6 +45,7 @@ a {
   padding: 5px;
   font-weight: bold;
   text-align: left;
+  background-color: #bbebff;
   border: 1px solid;
 }
 .txtMain {
@@ -36,11 +59,11 @@ a {
   width: 100%;
   padding: 5px;
   text-align: left;
-  border: 1px solid;
 }
 .lblCurl {
   padding: 5px;
   text-align: left;
+  background-color: #bbebff;
   border: 1px solid;
 }
 .txtCurl {
