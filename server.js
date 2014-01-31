@@ -18,7 +18,7 @@ var app = express();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
-app.set("trust proxy", true);
+//app.set("trust proxy", true);
 app.use(app.router);
 app.use(express.static(path.join(__dirname, "public")));
 
