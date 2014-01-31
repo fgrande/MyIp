@@ -35,6 +35,11 @@ exports.accept = function(request, response) {
   response.send(utils.getAllData(request).accept);
 }
 
+exports.via = function(request, response) {
+  var utils = require("../common/utils.js");
+  response.send(utils.getAllData(request).via);
+}
+
 exports.all = function(request, response) {
   var utils = require("../common/utils.js");
   var fmt = request.params.format || "";

@@ -13,6 +13,7 @@ exports.getAllData = function(request) {
   	      "accept" : request.headers['accept'],
   	      "encoding" : request.headers['accept-encoding'],
   	      "language" : request.headers['accept-language'],
+  	      "via" : request.headers['via'],
   	      "headers" : request.headers
   	    };
   	    
